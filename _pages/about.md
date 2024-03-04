@@ -16,6 +16,7 @@ Finding your way
 1. The Portfolio link above will direct you to some of my most recent projects.
 1. The Blog Posts link will take you to - you guessed it - some blog posts where I break down some of my projects and share my thoughts.
 1. The publications will send you to some of my scientific contributions.
+1. Now, go explore...
 
 
 Create content & metadata
