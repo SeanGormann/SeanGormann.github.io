@@ -30,8 +30,8 @@
 locale                   : "en-US"
 title                    : "| Seán Gorman |"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Seán Gorman"
+description              : &description "Architecht of Intelligence"
 url                      : https://SeanGormann.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SeanGormann/SeanGormann.github.io"
@@ -98,13 +98,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "ALSETLab"
-  avatar           : "profile.png"
-  bio              : "Prof. Luigi Vanfretti's research group and lab. working on cyber-physical power system modeling and simulation, stability and control."
-  location         : "Troy, NY"
-  employer         : "RPI"
-  googlescholar    : "https://scholar.google.com/citations?user=_XI6Q6UAAAAJ&hl=en&oi=ao"
-  email            : "luigi.vanfretti@gmail.com"
+  name             : "Seán Gorman"
+  avatar           : "doggo.png"
+  bio              : "Architecht of Intelligence"
+  location         : "Lisbon, Portugal"
+  employer         : #"RPI"
+  googlescholar    : #"https://scholar.google.com/citations?user=_XI6Q6UAAAAJ&hl=en&oi=ao"
+  email            : "seangorman117@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -112,25 +112,25 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "lvanfretti"
+  github           : "SeanGormann"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "vanfretti"
-  orcid            : "https://orcid.org/0000-0002-4125-1055"
+  linkedin         : "https://www.linkedin.com/in/seangorman8/"
+  orcid            : #"https://orcid.org/0000-0002-4125-1055"
   pinterest        :
-  researcherid     : "http://www.researcherid.com/rid/B-8174-2017"
-  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=23029592800"
+  researcherid     : #"http://www.researcherid.com/rid/B-8174-2017"
+  scopus           : #"https://www.scopus.com/authid/detail.uri?authorId=23029592800"
   soundcloud       :
-  stackoverflow    : "https://stackoverflow.com/users/8391684/luigi-vanfretti"
+  stackoverflow    : #"https://stackoverflow.com/users/8391684/luigi-vanfretti"
   steam            :
   tumblr           :
   twitter          : "lvanfretti"
   vine             :
   weibo            :
   xing             :
-  youtube          : "lvanfretti"
+  youtube          : #"lvanfretti"
   wikipedia        :
 
 
