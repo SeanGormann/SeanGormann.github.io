@@ -68,10 +68,6 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 
-# Jekyll skin
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
-
 
 # SEO Related
 google_site_verification :
@@ -301,6 +297,11 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+
+# Jekyll skin
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Archives
 #  Type
