@@ -9,6 +9,8 @@ redirect_from:
 
 This is my personal website, where you can learn more about me, my work and my research interests. I'm a graduate student wrapping up my studies and practical work experience at the University of Lisbon. Here, I'm focused on using Graph Neural Networks to model molecular interactions. I'm also working on using LLM's to parse through biomedical literature and empower researchers. 
 
+------
+
 Make yourself at home, underneath this beautiful image is some navigation instructions if you haven't already found what you're looking for. 
 
 ![Comp Bio as thought of by GPT4](/images/dalle-bioinf-conception.jpg)
