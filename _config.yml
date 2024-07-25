@@ -31,7 +31,7 @@ locale                   : "en-US"
 title                    : "| Seán Gorman |"
 title_separator          : "-"
 name                     : &name "Seán Gorman"
-description              : &description "Architecht of Intelligence"
+description              : &description "Architect of Intelligence"
 url                      : https://SeanGormann.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SeanGormann/SeanGormann.github.io"
@@ -131,7 +131,7 @@ author:
   stackoverflow    : #"https://stackoverflow.com/users/8391684/luigi-vanfretti"
   steam            :
   tumblr           :
-  twitter          : "lvanfretti"
+  twitter          : #"lvanfretti"
   vine             :
   weibo            :
   xing             :
@@ -195,6 +195,9 @@ kramdown:
 collections:
   teaching:
     output: false
+    permalink: /:collection/:path/
+  about_me:
+    output: true
     permalink: /:collection/:path/
   publications:
     output: true
@@ -335,3 +338,6 @@ compress_html:
     envs: development
 
 
+# Jekyll skin
+remote_theme: "mmistakes/minimal-mistakes" # @4.24.0"
+minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"

@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "About Me"
+    url: /about_me/
+
   - title: "CV"
     #url: /cv/
     url: /files/SeanGorman-CV2.pdf
@@ -12,6 +15,7 @@ main:
 
   - title: "Publications"
     url: /publications/
+
     
 
     
