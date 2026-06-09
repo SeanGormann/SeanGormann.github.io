@@ -182,7 +182,7 @@ h = cv['header']
 story.append(Paragraph(h['name'], sName))
 story.append(Spacer(1, 4))
 story.append(Paragraph(
-    f"{h['phone']} &nbsp;|&nbsp; {h['email']} &nbsp;|&nbsp; "
+    f"{h['website']} &nbsp;|&nbsp; {h['email']} &nbsp;|&nbsp; "
     f"{h['linkedin']} &nbsp;|&nbsp; {h['github']} &nbsp;|&nbsp; {h['kaggle']}",
     sContact))
 story.append(Spacer(1, 6))

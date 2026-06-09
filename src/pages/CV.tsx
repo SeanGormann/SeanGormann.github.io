@@ -1,4 +1,4 @@
-import { Download, Mail, Github, Linkedin, ExternalLink, MapPin, Phone } from "lucide-react";
+import { Download, Mail, Github, Linkedin, ExternalLink, MapPin, Globe } from "lucide-react";
 import cvData from "../../data/cv.json";
 
 type Section = { heading: string | null; bullets: string[] };
@@ -8,7 +8,7 @@ type Award = { title: string; description: string };
 type Project = { name: string; description: string };
 
 const cv = cvData as {
-  header: { name: string; phone: string; email: string; linkedin: string; github: string; kaggle: string };
+  header: { name: string; website: string; email: string; linkedin: string; github: string; kaggle: string };
   projects: Project[];
   experience: Job[];
   education: Edu[];
@@ -36,7 +36,10 @@ export default function CV() {
           <p className="font-mono text-xs text-primary-fixed uppercase tracking-widest mb-xs">Curriculum Vitae</p>
           <h1 className="font-sans text-6xl font-bold leading-none">{cv.header.name}</h1>
           <div className="flex flex-wrap gap-md mt-md text-secondary font-mono text-xs">
-            <span className="flex items-center gap-xs"><Phone size={12} />{cv.header.phone}</span>
+            <a href={`https://${cv.header.website}`} target="_blank" rel="noopener noreferrer"
+               className="flex items-center gap-xs hover:text-primary-fixed transition-colors">
+              <Globe size={12} />{cv.header.website}
+            </a>
             <span className="flex items-center gap-xs"><Mail size={12} />{cv.header.email}</span>
             <span className="flex items-center gap-xs"><MapPin size={12} />Lisbon, Portugal</span>
           </div>
