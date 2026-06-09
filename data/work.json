@@ -44,26 +44,38 @@
   "engineering": [
     {
       "category": "Distributed Infrastructure",
-      "title": "8x H100 Cluster Management",
-      "description": "Custom SLURM orchestration for low-latency weight streaming in multi-node protein folding simulations.",
+      "title": "8x H100 Training",
+      "description": "Training biomolecular and perturbation models on a single 8×H100 node — SLURM job scheduling, multi-GPU coordination, and memory-aware batching for large-scale fine-tuning runs.",
       "metrics": [
-        { "label": "Latency", "value": "0.8ms" },
-        { "label": "Scale", "value": "64 Nodes" },
-        { "label": "Throughput", "value": "4.2 TB/s" },
-        { "label": "Uptime", "value": "99.98%" }
+        { "label": "Hardware", "value": "8× H100" },
+        { "label": "Topology", "value": "Single Node" },
+        { "label": "Scheduler", "value": "SLURM" },
+        { "label": "Stack", "value": "PyTorch" }
       ],
       "span": 8
     },
     {
       "category": "Bio-Agents",
-      "title": "Agentic Protein Design",
-      "description": "LLM-driven iterative refinement of binding motifs via closed-loop laboratory feedback.",
+      "title": "Target Identification",
+      "description": "Agentic workflows for target discovery — combining literature retrieval, knowledge graphs, and structured reasoning to surface and prioritise candidate targets for downstream validation.",
+      "span": 4
+    },
+    {
+      "category": "Multi-Agent Systems",
+      "title": "Orchestrated Agent Workflows",
+      "description": "End-to-end multi-agent pipelines for scientific and operational tasks — transcriptomics metadata curation, data cleaning, drug prioritisation, and literature synthesis, with tool use, tracing, and evals wired in.",
       "span": 4
     },
     {
       "category": "Cloud Infrastructure",
-      "title": "AWS Proficiency & Best Practices",
-      "description": "Production-grade deployments on AWS — IAM least-privilege, infrastructure-as-code, cost-aware scaling, and observability baked in from day one.",
+      "title": "Multi-Cloud Infrastructure",
+      "description": "Production-grade cloud deployments across AWS, Azure, and GCP — IAM least-privilege, infrastructure-as-code, cost-aware scaling, and observability baked in from day one. Deepest experience on AWS; comfortable shipping and maintaining workloads on Azure and GCP as needed.",
+      "metrics": [
+        { "label": "AWS", "value": "Primary" },
+        { "label": "Azure", "value": "Proficient" },
+        { "label": "GCP", "value": "Proficient" },
+        { "label": "Practices", "value": "IaC · IAM" }
+      ],
       "span": 8
     }
   ],

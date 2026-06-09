@@ -261,7 +261,7 @@ export default function Work() {
                   </div>
                 )}
               </div>
-              {card.span === 4 && card.category === "Bio-Agents" && (
+              {card.span === 4 && !card.metrics && (
                 <div className="mt-lg">
                   <div className="bg-surface-container-lowest p-sm border border-outline-variant/20 relative overflow-hidden flex h-16">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary-fixed/20 to-transparent animate-pulse" />
