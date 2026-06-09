@@ -1,0 +1,85 @@
+[
+  {
+    "id": "leash-biosciences",
+    "title": "Leash Biosciences: Predicting Drug-Target Interactions",
+    "tagline": "Bronze Medal solution to the Leash-Bio small molecule – protein target interaction prediction competition.",
+    "image": "images/leash-bio.png",
+    "github": null,
+    "demo": null,
+    "competition": "https://www.kaggle.com/competitions/predict-new-medicines-with-belka",
+    "tags": ["Graph Neural Networks", "Drug Discovery", "Kaggle", "Python", "GNN"],
+    "result": "Top 10%, Bronze Medal",
+    "date": "2024-07-08",
+    "overview": "Contributions to the Predict New Medicines With BELKA competition hosted by Leash Biosciences on Kaggle. The goal was to use high-throughput screening data to develop an algorithm capable of predicting the binding affinity of small molecules (drugs) to protein targets. Closely aligned with Master's research and provided a unique opportunity to work with a massive dataset (133 million small molecules) rarely accessible outside major pharmaceutical companies.",
+    "why_important": "The pharmaceutical industry faces the enormous task of identifying effective drug molecules from a potential chemical space of 10^60 molecules. Traditional methods are time-consuming and labor-intensive. By leveraging ML models, we can potentially revolutionize drug discovery, making it faster, more efficient, and cost-effective.",
+    "approach": {
+      "summary": "Used Graph Neural Networks (GNNs), which represent molecules as graphs where atoms are nodes and bonds are edges, naturally capturing molecular topology. Molecules were provided in SMILES format, converted into graph representations for training.",
+      "techniques": [
+        "Classical Message Passing – linear transformations of node features based on neighbor features",
+        "Gated Graph Convolutions – gating mechanisms to control information flow",
+        "Attentive-FP – attention mechanisms to weigh node and edge importance dynamically"
+      ],
+      "data": "BELKA dataset: 133 million small molecules in SMILES format. Compressed using a dictionary mapping building block IDs to graph representations. Target labels stored in compressed .npz files as int16 values.",
+      "compute": "Trained on Vast AI using a cluster of 8 GPUs."
+    },
+    "reference": "Wu et al. (2024) – Multi-modal drug-target affinity prediction model using graph transformers and attention mechanisms. https://doi.org/10.1016/j.neunet.2023.11.018"
+  },
+  {
+    "id": "aura",
+    "title": "AuRA: Autonomous Research Assistant",
+    "tagline": "3rd Place solution in the Health Universe Hackathon. AutoGPT applied to Research.",
+    "image": "images/health-universe-share.png",
+    "screenshots": [
+      "images/glt25d1-half.png",
+      "images/redgalaxies-half.png"
+    ],
+    "github": "https://github.com/seangormann/aura",
+    "demo": "https://apps.healthuniverse.com/kba-xib-kmn",
+    "tags": ["LLM", "AutoGPT", "Research", "Google Scholar", "NLP", "Python"],
+    "result": "3rd Place – Health Universe Hackathon",
+    "date": "2023",
+    "overview": "An Autonomous Research Assistant (AuRA) that scours Google Scholar for relevant papers so researchers don't have to. Enter any scientifically oriented topic and AuRA finds the most relevant papers, provides concise summaries, and supplies reference links for deeper exploration.",
+    "description": "Hi, I'm Aura! Your very own Autonomous Research Assistant. Welcome to Aura, your dedicated research companion. I'm here to empower researchers at all levels and assist you in staying at the forefront of cutting-edge research in any domain. I'll sift through Google Scholar to uncover recent, pertinent papers on your chosen topic and offer concise summaries. If you're eager for more, I'll equip you with a trove of reference links for deeper exploration.",
+    "how_to_use": [
+      "Define Your Research Goal: Enter your research query. Whether it's a broad inquiry like 'What is ALS?' or a focused question about a specific gene's role.",
+      "Adjust the Timeframe: Use the year slider to determine the research timeframe.",
+      "Navigate to AuRA: Open the dropdown menu and select the 'AuRA' tab."
+    ],
+    "coming_soon": "Weekly email reports on your chosen research interest."
+  },
+  {
+    "id": "llm-prompt-recovery",
+    "title": "LLM Prompt Recovery Challenge",
+    "tagline": "Kaggle competition: uncovering the prompts used by Google's Gemma LLM to transform texts.",
+    "image": "images/gemma_logo.jpeg",
+    "github": "https://github.com/SeanGormann/llm_recovery",
+    "demo": null,
+    "competition": "https://www.kaggle.com/competitions/llm-prompt-recovery/overview",
+    "tags": ["LLM", "Kaggle", "Fine-tuning", "DPO", "NLP", "Hugging Face", "Python"],
+    "date": "2024",
+    "overview": "Participation in the LLM Prompt Recovery Challenge, a Kaggle competition focused on uncovering the prompts used by Google's Gemma LLM to transform texts. The objective was to develop techniques that accurately predict prompts used in various transformations, advancing understanding of how LLMs interpret and process inputs.",
+    "why_important": "Delving into prompt engineering allows better tailoring of AI behaviors in applications ranging from automated content generation to AI-driven interactive systems, advancing NLP and LLM interpretability. Insights can lead to techniques for detecting when text has been altered by an LLM — implications for content authenticity verification.",
+    "approach": {
+      "step1": {
+        "name": "Modeling Differences",
+        "description": "Leveraged a large language model to explicitly model the differences between an original text and its Gemma-rewritten version, capturing subtle nuances in language transformation."
+      },
+      "step2": {
+        "name": "Data Generation for Fine-Tuning",
+        "description": "Employed Direct Preference Optimization (DPO) to generate and score preferred and rejected responses, enabling parameter-efficient fine-tuning without extensive compute."
+      },
+      "step3": {
+        "name": "Training and Testing",
+        "description": "Rigorous training on a dynamically enhanced dataset, iteratively improving the model's ability to deduce original prompts. Testing validated generalization on unseen data."
+      }
+    },
+    "evaluation": "Sharpened Cosine Similarity — evaluates closeness of predicted prompts to true prompts.",
+    "skills": [
+      "Synthetic Data Generation",
+      "Semantic Analysis",
+      "Fine-Tuning LLMs",
+      "Machine Learning Pipelines",
+      "Prompt Engineering"
+    ]
+  }
+]

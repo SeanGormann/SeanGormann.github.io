@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ire1a-2023",
+    "title": "Deletion of the Unfolded Protein Response Transducer IRE1α Is Detrimental to Aging Photoreceptors and to ER Stress-Mediated Retinal Degeneration",
+    "date": "2023-09-01",
+    "venue": "Investigative Ophthalmology & Visual Science (ARVO)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37097227/",
+    "citation": "Massoudi, D., Gorman, S., Kuo, Y. M., Iwawaki, T., Oakes, S. A., Papa, F. R., & Gould, D. B. (2023). Deletion of the Unfolded Protein Response Transducer IRE1α Is Detrimental to Aging Photoreceptors and to ER Stress-Mediated Retinal Degeneration. Investigative Ophthalmology & Visual Science, 64(4), 30-30.",
+    "abstract": "The unfolded protein response (UPR) is triggered when the protein folding capacity of the endoplasmic reticulum (ER) is overwhelmed and misfolded proteins accumulate in the ER, a condition referred to as ER stress. IRE1α is an ER-resident protein that plays major roles in orchestrating the UPR. Several lines of evidence implicate the UPR and its transducers in neurodegenerative diseases, including retinitis pigmentosa (RP), a group of inherited diseases that cause progressive dysfunction and loss of rod and cone photoreceptors. This study evaluated the contribution of IRE1α to photoreceptor development, homeostasis, and degeneration.",
+    "tags": ["UPR", "IRE1α", "Retinal Degeneration", "Photoreceptors", "ER Stress", "Neuroscience"]
+  },
+  {
+    "id": "ire1a-2021",
+    "title": "The UPR transducer—IRE1α—is required for photoreceptor health and protection against retinal degeneration",
+    "date": "2021-09-01",
+    "venue": "Investigative Ophthalmology & Visual Science (ARVO)",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10148664/",
+    "citation": "Massoudi, D., Gorman, S., Kuo, Y. M., Olivier, A., Kim, J., Wiqas, A., ... & Gould, D. B. (2021). The UPR transducer—IRE1α—is required for photoreceptor health and protection against retinal degeneration. Investigative Ophthalmology & Visual Science, 62(8), 3073-3073.",
+    "abstract": {
+      "purpose": "The unfolded protein response (UPR) is triggered when the protein folding capacity of the endoplasmic reticulum (ER) is overwhelmed and misfolded proteins accumulate in the ER. IRE1α is an ER-resident protein that plays major roles in orchestrating the UPR. Several lines of evidence implicate the UPR and its transducers in neurodegenerative diseases, including retinitis pigmentosa (RP). This study evaluated the contribution of IRE1α to photoreceptor development, homeostasis, and degeneration.",
+      "methods": "Used a conditional gene targeting strategy to selectively inactivate Ire1α in mouse rod photoreceptors. Employed optical coherence tomography (OCT) imaging, histology, and electroretinography (ERG) to longitudinally assess IRE1α deficiency effects on retinal development and function.",
+      "results": "OCT, histology, and ERG analyses did not reveal abnormalities in IRE1α-deficient retinas up to 3 months old. By 6 months, mutant animals showed reduced outer nuclear layer thickness and deficits in retinal function. Conditional inactivation of Ire1α accelerated retinal degeneration caused by the RhoP23H mutation.",
+      "conclusions": "IRE1α is dispensable for photoreceptor development but important for photoreceptor homeostasis in aging retinas and for protecting against ER stress-mediated photoreceptor degeneration."
+    },
+    "tags": ["UPR", "IRE1α", "Retinal Degeneration", "Photoreceptors", "ER Stress", "Neuroscience"]
+  },
+  {
+    "id": "tgfb-gould-2023",
+    "title": "Elevated TGFβ signaling contributes to cerebral small vessel disease in mouse models of Gould syndrome",
+    "date": "2023-11-23",
+    "venue": "Matrix Biology",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36435425/",
+    "citation": "Branyan, K., Labelle-Dumais, C., Wang, X., Hayashi, G., Lee, B., Peltz, Z., Gorman, S., & Gould, D. B. (2023). Elevated TGFβ signaling contributes to cerebral small vessel disease in mouse models of Gould syndrome. Matrix Biology, 115, 48-70.",
+    "abstract": "Cerebral small vessel disease (CSVD) is a leading cause of stroke and vascular cognitive impairment and dementia. Studying monogenic CSVD can reveal pathways dysregulated in common sporadic forms of the disease and may represent therapeutic targets. Mutations in collagen type IV alpha 1 (COL4A1) and alpha 2 (COL4A2) cause highly penetrant CSVD as part of a multisystem disorder referred to as Gould syndrome. We used histological, molecular, genetic, pharmacological, and in vivo imaging approaches to characterize CNS vascular pathologies in Col4a1 mutant mouse models. We identified elevated TGFβ signaling as a pathogenic consequence of Col4a1 mutations and showed that genetically suppressing TGFβ signaling ameliorated CNS vascular pathologies, including partial rescue of retinal vascular patterning defects, prevention of VSMC loss, and significant reduction of intracerebral hemorrhages. This study identifies a novel biological role for collagen α1α1α2(IV) as a regulator of TGFβ signaling and suggests that pharmacologically suppressing TGFβ signaling could reduce the severity of CSVD.",
+    "tags": ["TGFβ", "Cerebral Small Vessel Disease", "Gould Syndrome", "COL4A1", "COL4A2", "Vascular Biology"]
+  }
+]

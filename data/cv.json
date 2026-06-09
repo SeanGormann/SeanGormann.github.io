@@ -1,0 +1,117 @@
+{
+  "header": {
+    "name": "Seán Gorman",
+    "phone": "+353 87 610 7344",
+    "email": "seangorman117@gmail.com",
+    "linkedin": "linkedin.com/in/seangorman8",
+    "github": "github.com/SeanGormann",
+    "kaggle": "kaggle.com/seangormann"
+  },
+  "projects": [
+    {
+      "name": "MolecuLead",
+      "description": "Full stack application connecting a biological knowledge graph, four bio-databases and an LLM via GraphRAG — enabling knowledge-grounded Q&amp;A for scientific research in drug discovery."
+    },
+    {
+      "name": "Boltz-RNA  [Top 2%]",
+      "description": "Fine-tuned a biomolecular foundation model for enhanced RNA structure prediction in a competition, scoring among the top 2% of participants."
+    },
+    {
+      "name": "LeashDTI",
+      "description": "Graph Neural Networks for Drug-Target Interaction prediction — Kaggle-hosted competition."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Machine Learning Engineer",
+      "company": "DeepLife",
+      "period": "2024 – present",
+      "sections": [
+        {
+          "heading": "LLMs &amp; Agentic Systems",
+          "bullets": [
+            "Built end-to-end multi-agent systems for biological research workflows — combining LLM orchestration, RAG pipelines, and autonomous agents for transcriptomics metadata curation and scientific literature discovery.",
+            "Responsible for MCP tool servers, skills, sandboxed environments, tracing, evals, and observability. Within the first month, obs &amp; evals yielded a <b>90% increase in information retrieval accuracy</b> and a significant reduction in hallucinations.",
+            "Fine-tuned small language models via reinforcement learning (GRPO) for Tool-Integrated Reasoning (TIR) on domain-specific biological tasks; created fine-tuned LLM assistants for product Q&amp;A and user support."
+          ]
+        },
+        {
+          "heading": "Biomolecular Modelling",
+          "bullets": [
+            "Developed large perturbation models (LPM) using scRNA-seq to predict cellular responses to chemical and genetic perturbations.",
+            "Trained LPMs on datasets with <b>100+ million cells</b> across multi-GPU clusters.",
+            "Applied ML to decode gene regulatory networks and predict cell state transitions."
+          ]
+        }
+      ]
+    },
+    {
+      "role": "ML Implementation Engineer",
+      "company": "Self Employed",
+      "period": "2024 – 2025",
+      "sections": [
+        {
+          "heading": null,
+          "bullets": [
+            "Assisted companies integrating AI into their workflows, implementing advanced data processing with LLMs.",
+            "Built patent analysis software for Highway Ventures — reduced time spent analysing a patent portfolio from 40 to 4 hours: a <b>10× efficiency boost</b>."
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Staff Research Associate",
+      "company": "University of California, SF — Gould Lab",
+      "period": "2019 – 2022",
+      "sections": [
+        {
+          "heading": null,
+          "bullets": [
+            "Spearheaded technical work across two projects on kidney dysfunction and KO cell line creation/analysis.",
+            "Trained 4 new staff associates and junior specialists in genotyping and sequence analysis.",
+            "Applied techniques including CRISPR-Cas9 transfection, western blots, immunolabeling, cell culture, and MEF harvesting."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc Bioinformatics & Computational Biology",
+      "institution": "University of Lisbon",
+      "period": "2022 – 2024",
+      "thesis": "\"Deep Learning for Discovery of Drug Binding Activities to Orphan Targets\"",
+      "modules": "Advanced ML · Data Mining · Systems Biology · Quantitative Methods"
+    },
+    {
+      "degree": "BSc Neuroscience (Hons)",
+      "institution": "University College Dublin",
+      "period": "2015 – 2019",
+      "thesis": "\"Modulation of Hippocampal Synaptic Transmission by Cannabidiol\"",
+      "modules": "Molecular Genetics · Neuropharmacology · Data Modelling"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Health Universe Hackathon 2023 — 3rd Place",
+      "description": "AuRA: LLM-powered Autonomous Research Agent using custom RAG and Google Scholar, built with LangChain and OpenAI."
+    },
+    {
+      "title": "Stanford RNA Folding Challenge Part 2",
+      "description": "Silver Medalist in the Kaggle-hosted Stanford challenge."
+    }
+  ],
+  "skills": [
+    "Python", "SQL", "R", "JavaScript", "TypeScript", "Svelte",
+    "PyTorch", "TensorFlow", "scikit-learn", "LangChain", "NLP",
+    "Computer Vision", "Reinforcement Learning", "Distributed Training",
+    "Deep Learning", "AWS", "GCP", "Docker", "Git", "Linux",
+    "Bioinformatics", "Genomics", "NGS", "CRISPR", "Systems Biology",
+    "Biostatistics", "Data Mining", "Big Data Analytics"
+  ],
+  "publications": [
+    "Massoudi, D., <b>Gorman, S.</b>, et al. (2023). Deletion of the Unfolded Protein Response Transducer IRE1α Is Detrimental to Aging Photoreceptors and to ER Stress-Mediated Retinal Degeneration. <i>Investigative Ophthalmology &amp; Visual Science</i>, 64(4).",
+    "Branyan, K., Labelle-Dumais, C., …, <b>Gorman, S.</b>, &amp; Gould, D. B. (2023). Elevated TGFβ signaling contributes to cerebral small vessel disease in mouse models of Gould syndrome. <i>Matrix Biology</i>, 115, 48–70.",
+    "Massoudi, D., <b>Gorman, S.</b>, et al. (2021). The UPR transducer—IRE1α—is required for photoreceptor health and protection against retinal degeneration. <i>Investigative Ophthalmology &amp; Visual Science</i>, 62(8)."
+  ]
+}

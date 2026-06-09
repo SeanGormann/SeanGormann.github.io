@@ -1,0 +1,60 @@
+{
+  "name": "Seán Gorman",
+  "title": "Architect of Intelligence",
+  "location": "Lisbon, Portugal",
+  "email": "seangorman117@gmail.com",
+  "github": "SeanGormann",
+  "linkedin": "seangorman8",
+  "avatar": "images/doggo.png",
+  "bio_short": "Machine Learning Engineer and Researcher with a deep passion for computational biology and drug discovery.",
+  "bio_long": "Hi, I'm Seán Gorman, a Machine Learning Engineer and Researcher with a deep passion for computational biology and drug discovery. My work spans from integrating AI into business workflows to developing cutting-edge deep learning models for predicting pharmacological metrics. I have experience working in multidisciplinary labs and have contributed to significant research projects in various institutions.",
+  "intro": "This is my personal website, where you can learn more about me, my work and my research interests.",
+  "current_work": "I'm a graduate student wrapping up my studies and practical work experience at the University of Lisbon. Here, I'm focused on using Graph Neural Networks to model molecular interactions. I'm also working on using LLM's to parse through biomedical literature and empower researchers.",
+  "education": [
+    {
+      "degree": "MSc Bioinformatics & Computational Biology",
+      "institution": "University of Lisbon",
+      "years": "2022 - 2024",
+      "thesis": "Deep Learning for Discovery of Drug Binding Activities to Orphan Targets",
+      "modules": [
+        "Advanced Machine Learning",
+        "Data Mining",
+        "Advanced Studies in Bioinformatics and Computational Biology",
+        "Quantitative Methods in Systems Biology"
+      ]
+    },
+    {
+      "degree": "BSc Neuroscience (Hons)",
+      "institution": "University College Dublin",
+      "years": "2015 - 2019",
+      "thesis": "Modulation of Hippocampal Synaptic Transmission by Cannabidiol",
+      "modules": [
+        "Biomolecular-lab skills",
+        "Molecular Genetics",
+        "Data Modelling for Science",
+        "Neuropharmacology"
+      ]
+    }
+  ],
+  "career": [
+    {
+      "role": "Junior Research Specialist",
+      "org": "Gould Lab, University of California, San Francisco",
+      "years": "2019 - 2022",
+      "description": "Worked in a multidisciplinary lab studying the mechanisms underpinning Gould Syndrome. Spearheaded technical work on two projects relating to kidney dysfunction and creating/analyzing KO cell lines. Trained new staff research associates and junior specialists in techniques such as genotyping, DNA sequence analysis, western blots, immunolabelling, cell culture, MEF harvesting, and CRISPR-Cas9 transfection."
+    },
+    {
+      "role": "Machine Learning Researcher",
+      "org": "University of Lisbon",
+      "years": "2022 - Present",
+      "description": "Apply machine learning and deep learning techniques to drug discovery, predicting pharmacological metrics such as Ki and IC50. Automate extraction, transformation, and visualization of datasets with over half a million samples. Design and test deep learning architectures including Transformers and Graph Neural Networks. Training with cloud computing platforms (GCP, AWS, Vast AI)."
+    },
+    {
+      "role": "AI Engineer Consultant",
+      "org": "Independent",
+      "years": "2022 - Present",
+      "description": "Assist companies in integrating AI into their workflow and implementing advanced data processing with large language models (LLMs). Accumulated data through web-scraping and processed it using AI, delivering customized databases tailored to each company's use case. Projects include developing custom models to simulate biological systems and implementing AI solutions to enhance business operations."
+    }
+  ],
+  "cv_pdf": "files/SeanGorman-CV2.pdf"
+}

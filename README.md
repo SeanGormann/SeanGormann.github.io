@@ -1,41 +1,166 @@
+# SeanGormann.github.io
 
-# Academic Pages
+Personal site for [Seán Gorman](https://seangormann.github.io) — deployed to GitHub Pages via a Vite + React + TypeScript build.
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+---
 
-Academic Pages is a Github Pages template for academic websites.
+## Stack
 
+| Layer | Tech |
+|-------|------|
+| Framework | React 19 + TypeScript |
+| Build tool | Vite 6 |
+| Styling | Tailwind CSS v4 |
+| Routing | React Router v7 (HashRouter — GitHub Pages compatible) |
+| CV PDF | Python 3 + ReportLab |
 
-# Getting Started
+---
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Repo layout
 
-See more info at https://academicpages.github.io/
+```
+├── src/
+│   ├── App.tsx                  # Route definitions
+│   ├── main.tsx                 # React entry point
+│   ├── index.css                # Tailwind + custom theme tokens
+│   ├── components/
+│   │   └── Layout.tsx           # Nav bar + footer shell
+│   └── pages/
+│       ├── Home.tsx             # Landing page / core domains
+│       ├── Research.tsx         # Research work
+│       ├── Engineering.tsx      # Projects & infrastructure
+│       ├── CV.tsx               # On-site CV (reads data/cv.json)
+│       └── About.tsx            # Bio + contact links
+│
+├── data/
+│   ├── cv.json                  # ← single source of truth for CV content
+│   ├── profile.json             # Personal info, bio, education, career
+│   ├── projects.json            # Project details
+│   ├── publications.json        # Academic publications
+│   ├── images/                  # Site images
+│   └── files/
+│       └── SeanGorman-CV.pdf    # Generated PDF (committed, served for download)
+│
+├── cv/
+│   ├── generate_cv.py           # ReportLab PDF generator (reads data/cv.json)
+│   ├── build.sh                 # One-command CV build script
+│   └── .venv/                   # Auto-created Python venv (gitignored)
+│
+├── index.html                   # Vite HTML entry
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
+```
 
-## Running Locally
+---
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+## Local development
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+**Prerequisites:** Node.js 18+
 
+```bash
+npm install
+npm run dev       # → http://localhost:3000
+```
 
-# Maintenance 
+---
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Deploying to GitHub Pages
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+This site uses `HashRouter` so all navigation works as static files — no server-side routing required.
 
-## Bugfixes and enhancements
+### First-time setup
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+1. Go to your repo on GitHub → **Settings → Pages**
+2. Set **Source** to **GitHub Actions**
+3. Create `.github/workflows/deploy.yml`:
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deployment
+```
+
+4. Push to `master` — GitHub Actions builds and deploys automatically on every push.
+
+> The `.nojekyll` file in the repo root tells GitHub Pages not to run Jekyll on the output.
+
+---
+
+## Updating the CV
+
+All CV content lives in **`data/cv.json`**. Edit that file, then run one command to regenerate the PDF:
+
+```bash
+./cv/build.sh
+```
+
+On first run this creates a Python venv at `cv/.venv/` and installs ReportLab — subsequent runs are instant.
+
+The script outputs `data/files/SeanGorman-CV.pdf`. Commit both the JSON and the PDF together:
+
+```bash
+git add data/cv.json data/files/SeanGorman-CV.pdf
+git commit -m "update CV"
+git push
+```
+
+The site page (`/cv`) and the downloadable PDF are then both updated in one push.
+
+### cv.json structure
+
+```jsonc
+{
+  "header":       { "name", "phone", "email", "linkedin", "github", "kaggle" },
+  "projects":     [ { "name", "description" } ],
+  "experience":   [ { "role", "company", "period", "sections": [ { "heading", "bullets" } ] } ],
+  "education":    [ { "degree", "institution", "period", "thesis", "modules" } ],
+  "awards":       [ { "title", "description" } ],
+  "skills":       [ "tag", ... ],
+  "publications": [ "citation string with inline <b>HTML</b> ok" ]
+}
+```
+
+Bullet strings support inline HTML (`<b>`, `<i>`, `&amp;` etc.) — both the PDF generator and the React page render it correctly.
+
+---
+
+## Tailwind v4 note
+
+This project uses Tailwind CSS v4, which maps `max-w-{size}` / `p-{size}` etc. to custom spacing tokens defined in `src/index.css` under `@theme`. The tokens are:
+
+| Token | Value |
+|-------|-------|
+| `xs` | 8px |
+| `sm` | 16px |
+| `md` | 24px |
+| `lg` | 48px |
+| `xl` | 80px |
+
+Avoid using `max-w-sm`, `max-w-lg` etc. as width constraints — use explicit values like `max-w-[32rem]` or `max-w-2xl` instead.
