@@ -8,7 +8,6 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Research from "./pages/Research";
 import Engineering from "./pages/Engineering";
-import About from "./pages/About";
 import CV from "./pages/CV";
 
 export default function App() {
@@ -19,7 +18,6 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="research" element={<Research />} />
           <Route path="engineering" element={<Engineering />} />
-          <Route path="about" element={<About />} />
           <Route path="cv" element={<CV />} />
         </Route>
       </Routes>

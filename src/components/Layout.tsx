@@ -9,14 +9,13 @@ export default function Layout() {
     { name: "RESEARCH", path: "/research" },
     { name: "ENGINEERING", path: "/engineering" },
     { name: "CV", path: "/cv" },
-    { name: "ABOUT", path: "/about" },
   ];
 
   return (
     <div className="min-h-screen flex flex-col custom-scrollbar overflow-x-hidden">
       <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-8 max-w-container-max mx-auto left-0 right-0 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
         <Link to="/" className="font-mono text-2xl font-bold text-primary-fixed">
-          BIO-ML // ARCHITECT
+          SEAN // GORMAN
         </Link>
         <div className="hidden md:flex gap-lg items-center">
           {navLinks.map((link) => {
