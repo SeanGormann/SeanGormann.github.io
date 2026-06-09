@@ -56,7 +56,7 @@ export default function CV() {
           </div>
         </div>
         <a
-          href="/data/files/SeanGorman-CV.pdf"
+          href="/files/SeanGorman-CV.pdf"
           download
           className="shrink-0 flex items-center gap-sm bg-primary-fixed text-on-primary-fixed font-mono font-bold text-xs py-md px-lg rounded-lg glow-hover transition-all uppercase tracking-wider"
         >

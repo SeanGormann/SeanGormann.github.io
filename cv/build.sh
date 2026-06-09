@@ -19,5 +19,5 @@ fi
 "$VENV/bin/python" "$REPO_ROOT/cv/generate_cv.py"
 
 echo ""
-echo "PDF updated → data/files/SeanGorman-CV.pdf"
-echo "To deploy:    git add data/ && git commit -m 'update CV' && git push"
+echo "PDF updated → public/files/SeanGorman-CV.pdf"
+echo "To deploy:    git add data/cv.json public/files/SeanGorman-CV.pdf && git commit -m 'update CV' && git push"

@@ -22,7 +22,7 @@ from reportlab.platypus import Flowable
 # ── Paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent
 DATA_FILE = REPO_ROOT / "data" / "cv.json"
-OUT_FILE  = REPO_ROOT / "data" / "files" / "SeanGorman-CV.pdf"
+OUT_FILE  = REPO_ROOT / "public" / "files" / "SeanGorman-CV.pdf"
 
 with open(DATA_FILE) as f:
     cv = json.load(f)

@@ -39,7 +39,11 @@ Personal site for [Seán Gorman](https://seangormann.github.io) — deployed to 
 │   ├── publications.json        # Academic publications
 │   ├── images/                  # Site images
 │   └── files/
-│       └── SeanGorman-CV.pdf    # Generated PDF (committed, served for download)
+│       └── SeanGorman-CV.pdf    # OLD — no longer used
+│
+├── public/
+│   └── files/
+│       └── SeanGorman-CV.pdf    # Generated PDF (Vite copies to dist/, served for download)
 │
 ├── cv/
 │   ├── generate_cv.py           # ReportLab PDF generator (reads data/cv.json)
@@ -123,10 +127,10 @@ All CV content lives in **`data/cv.json`**. Edit that file, then run one command
 
 On first run this creates a Python venv at `cv/.venv/` and installs ReportLab — subsequent runs are instant.
 
-The script outputs `data/files/SeanGorman-CV.pdf`. Commit both the JSON and the PDF together:
+The script outputs `public/files/SeanGorman-CV.pdf`. Commit both the JSON and the PDF together:
 
 ```bash
-git add data/cv.json data/files/SeanGorman-CV.pdf
+git add data/cv.json public/files/SeanGorman-CV.pdf
 git commit -m "update CV"
 git push
 ```
