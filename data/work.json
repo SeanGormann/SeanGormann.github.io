@@ -1,0 +1,100 @@
+{
+  "interestsIntro": "I'm a computational biologist at the intersection of biology and AI — and I genuinely love it. There's something deeply meaningful about translating the complexity of living systems into models that can actually help us understand, predict, and intervene. I think this field is the future: the problems are hard, the data is rich, and the potential to accelerate discovery has never been greater. This page is a snapshot of where my curiosity tends to land.",
+  "interestTitles": [
+    "Virtual Cell Modelling",
+    "Agentic Systems",
+    "Tool-Integrated Reasoning",
+    "Distributed ML",
+    "Computational Genomics"
+  ],
+  "projects": [
+    {
+      "id": "moleculead",
+      "name": "MolecuLead",
+      "description": "Full stack application connecting a biological knowledge graph, four bio-databases and an LLM via GraphRAG — enabling knowledge-grounded Q&A for scientific research in drug discovery.",
+      "github": "https://github.com/SeanGormann/moleculead",
+      "tags": ["GraphRAG", "LLM", "Drug Discovery", "Full Stack"]
+    },
+    {
+      "id": "boltz-rna",
+      "name": "Boltz-RNA",
+      "badge": "Top 2%",
+      "description": "Fine-tuned a biomolecular foundation model for enhanced RNA structure prediction in a competition, scoring among the top 2% of participants.",
+      "github": "https://github.com/SeanGormann/boltz-rna",
+      "tags": ["Foundation Models", "RNA", "Fine-tuning", "Kaggle"]
+    },
+    {
+      "id": "leash-dti",
+      "name": "LeashDTI",
+      "description": "Graph Neural Networks for Drug-Target Interaction prediction — Kaggle-hosted competition.",
+      "github": "https://github.com/SeanGormann/leash_dti",
+      "tags": ["GNN", "Drug Discovery", "Kaggle", "PyTorch"]
+    }
+  ],
+  "classified": [
+    {
+      "id": "virtual-cell",
+      "title": "Virtual Cell Modelling"
+    },
+    {
+      "id": "harness-engineering",
+      "title": "Harness Engineering for Platform Integrated Agents"
+    }
+  ],
+  "engineering": [
+    {
+      "category": "Distributed Infrastructure",
+      "title": "8x H100 Cluster Management",
+      "description": "Custom SLURM orchestration for low-latency weight streaming in multi-node protein folding simulations.",
+      "metrics": [
+        { "label": "Latency", "value": "0.8ms" },
+        { "label": "Scale", "value": "64 Nodes" },
+        { "label": "Throughput", "value": "4.2 TB/s" },
+        { "label": "Uptime", "value": "99.98%" }
+      ],
+      "span": 8
+    },
+    {
+      "category": "Bio-Agents",
+      "title": "Agentic Protein Design",
+      "description": "LLM-driven iterative refinement of binding motifs via closed-loop laboratory feedback.",
+      "span": 4
+    },
+    {
+      "category": "Cloud Infrastructure",
+      "title": "AWS Proficiency & Best Practices",
+      "description": "Production-grade deployments on AWS — IAM least-privilege, infrastructure-as-code, cost-aware scaling, and observability baked in from day one.",
+      "span": 8
+    }
+  ],
+  "foundationModels": [
+    {
+      "id": "STRUCT_MODEL_01",
+      "name": "Boltz",
+      "description": "A large-scale pre-trained transformer model optimized for protein folding trajectories. Boltz introduces a novel temporal attention mechanism that captures micro-second molecular dynamics with unprecedented fidelity.",
+      "tags": ["Molecular Bio", "Large Scale Pre-training", "Temporal Attention"],
+      "span": 6
+    },
+    {
+      "id": "VC_MODEL_02",
+      "name": "Geneformer",
+      "description": "Context-aware embeddings for single-cell transcriptomics. Geneformer leverages transfer learning to predict gene network perturbations in rare disease states.",
+      "tags": ["Single-Cell", "Transcriptomics"],
+      "span": 6
+    },
+    {
+      "id": "PERT_MODEL_03",
+      "name": "GEARS",
+      "description": "Graph Ensemble of Allelic Response Systems. A specialized GNN framework for modeling multi-gene interactions and epistatic effects in synthetic biology.",
+      "tags": ["Graph Neural Nets", "Synthetic Bio"],
+      "span": 6
+    },
+    {
+      "id": "VC_MODEL_04",
+      "name": "STATE",
+      "description": "Arc Institute's foundation model for virtual cell simulation — trained on massive perturbation atlases to predict transcriptional and phenotypic responses to genetic and chemical interventions across cell types.",
+      "tags": ["Virtual Cell", "Perturbation Prediction", "Arc Institute"],
+      "span": 6
+    }
+  ]
+}

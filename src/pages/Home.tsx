@@ -61,7 +61,7 @@ export default function Home() {
         <div className="absolute bottom-10 right-10 w-24 h-24 border-b-2 border-r-2 border-primary-fixed/20 hidden lg:block"></div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section 
       <section className="py-xl border-y border-outline-variant/20 bg-surface-container-lowest">
         <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-lg">
           <div className="group p-lg bg-surface-container-low border border-outline-variant/30 rounded-lg hover:border-primary-fixed/50 transition-all duration-500">
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* The Journey & Competencies */}
       <section className="py-xl px-gutter max-w-container-max mx-auto">
@@ -384,7 +384,7 @@ export default function Home() {
           <div className="font-mono text-xs text-primary-fixed uppercase tracking-widest mb-md">
             Active Process // Simulation_049
           </div>
-          <div className="bg-black/50 p-lg rounded-lg border border-outline-variant/20 font-mono text-sm overflow-x-auto">
+          <div className="bg-code-block p-lg rounded-lg border border-outline-variant/20 font-mono text-sm overflow-x-auto">
             <pre className="text-on-surface-variant"><code><span className="text-primary-fixed">import</span> biolab <span className="text-primary-fixed">as</span> bl
 <span className="text-primary-fixed">from</span> ml_core <span className="text-primary-fixed">import</span> DistributedTrainer
 

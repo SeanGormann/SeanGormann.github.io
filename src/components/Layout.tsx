@@ -1,13 +1,14 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { Terminal, Code2 } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
 
 export default function Layout() {
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
     { name: "HOME", path: "/" },
-    { name: "RESEARCH", path: "/research" },
-    { name: "ENGINEERING", path: "/engineering" },
+    { name: "THE WORK", path: "/work" },
     { name: "CV", path: "/cv" },
   ];
 
@@ -35,14 +36,13 @@ export default function Layout() {
             );
           })}
         </div>
-        <div className="flex items-center gap-sm">
-          <button className="text-primary-fixed scale-95 active:scale-90 transition-transform">
-            <Terminal size={30} />
-          </button>
-          <button className="text-primary-fixed scale-95 active:scale-90 transition-transform">
-            <Code2 size={30} />
-          </button>
-        </div>
+        <button
+          onClick={toggleTheme}
+          aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          className="text-primary-fixed scale-95 active:scale-90 transition-transform hover:opacity-80"
+        >
+          {theme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+        </button>
       </nav>
 
       <main className="flex-1 pt-32">
