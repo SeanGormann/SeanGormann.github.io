@@ -12,9 +12,15 @@ export default function Layout() {
     { name: "CV", path: "/cv" },
   ];
 
+  const isHome = location.pathname === "/";
+
   return (
     <div className="min-h-screen flex flex-col custom-scrollbar overflow-x-hidden">
-      <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-8 max-w-container-max mx-auto left-0 right-0 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+      <nav
+        className={`fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-8 max-w-container-max mx-auto left-0 right-0 backdrop-blur-md border-b border-outline-variant/30 ${
+          isHome ? "bg-background/70" : "bg-surface/80"
+        }`}
+      >
         <Link to="/" className="font-mono text-2xl font-bold text-primary-fixed">
           SEAN // GORMAN
         </Link>
@@ -45,7 +51,7 @@ export default function Layout() {
         </button>
       </nav>
 
-      <main className="flex-1 pt-32">
+      <main className={`flex-1 ${isHome ? "" : "pt-32"}`}>
         <Outlet />
       </main>
 

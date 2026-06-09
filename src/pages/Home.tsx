@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[690px] flex flex-col items-center justify-center overflow-hidden grid-background px-gutter">
+      <section className="relative min-h-[690px] flex flex-col items-center justify-center overflow-hidden grid-background px-gutter pt-32">
         <div className="relative z-10 max-w-4xl text-center space-y-md">
           <div className="inline-block px-sm py-1 border border-primary-fixed/30 bg-primary-fixed/5 rounded-full mb-md">
             <span className="font-mono text-xs text-primary-fixed uppercase tracking-[0.2em]">
